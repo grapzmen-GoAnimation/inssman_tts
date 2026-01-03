@@ -1,0 +1,100 @@
+[
+  {
+    "conditions": [
+      {
+        "enabled": true,
+        "matchType": "contain",
+        "source": "https://voice.vampi.tech/api/synthesizeSpeech"
+      }
+    ],
+    "connectedRuleIds": [],
+    "enabled": true,
+    "headers": [
+      {
+        "enabled": true,
+        "header": "Authorization",
+        "operation": "set",
+        "type": "request",
+        "value": " 865f6794ed7617b522af9b29275504a0"
+      }
+    ],
+    "lastMatchedTimestamp": null,
+    "name": "Modify Header-1767459877486",
+    "pageType": "modify-header",
+    "type": "rule"
+  },
+  {
+    "conditions": [
+      {
+        "enabled": true,
+        "matchType": "contain",
+        "source": "https://tts.vampi.tech/api/synthesizeSpeech"
+      }
+    ],
+    "connectedRuleIds": [],
+    "enabled": true,
+    "headers": [
+      {
+        "enabled": true,
+        "header": "Authorization",
+        "operation": "set",
+        "type": "request",
+        "value": "7617b522af9b29275865f6794ed504a0"
+      }
+    ],
+    "lastMatchedTimestamp": null,
+    "name": "Modify Header-1766950668770",
+    "pageType": "modify-header",
+    "type": "rule"
+  },
+  {
+    "conditions": [
+      {
+        "enabled": true,
+        "matchType": "contain",
+        "source": "https://api.voiceforge.com/swift_engine"
+      }
+    ],
+    "connectedRuleIds": [],
+    "enabled": true,
+    "headers": [
+      {
+        "enabled": true,
+        "header": "Http_x_api_key",
+        "operation": "set",
+        "type": "request",
+        "value": "8b3f76a8539"
+      }
+    ],
+    "lastMatchedTimestamp": null,
+    "name": "Modify Header-1765593992193",
+    "pageType": "modify-header",
+    "type": "rule"
+  },
+  {
+    "conditions": [
+      {
+        "enabled": true,
+        "matchType": "contain",
+        "requestMethods": [],
+        "resourceTypes": [],
+        "source": "https://voice.vampi.tech/api/synthesizeSpeech"
+      }
+    ],
+    "connectedRuleIds": [],
+    "enabled": true,
+    "headers": [
+      {
+        "enabled": true,
+        "header": "Content-Type",
+        "operation": "set",
+        "type": "response",
+        "value": "audio/mpeg"
+      }
+    ],
+    "lastMatchedTimestamp": null,
+    "name": "Bypass CORS",
+    "pageType": "modify-header",
+    "type": "rule"
+  }
+]
